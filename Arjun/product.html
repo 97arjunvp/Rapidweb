@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Description">
+    <title>RedStore | Product Description</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+            <a class="navbar-brand" href="#">
+                <img src="storeimages/ima_logo.png" width="64px" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="myBtn">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Product Description Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="storeimages/product-1.jpg" class="img-fluid" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Red Printed T-Shirt</h2>
+                <p>$50.00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tristique urna. Vestibulum
+                    bibendum venenatis arcu, et sollicitudin massa.</p>
+                <div class="d-flex align-items-center mb-3">
+                    <input type="number" value="1" min="1" class="form-control w-25 mr-2">
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+                <h4>Product Details</h4>
+                <ul>
+                    <li>Material: 100% Cotton</li>
+                    <li>Available Sizes: S, M, L, XL</li>
+                    <li>Color: Red</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container mt-5">
+        <h3>Customer Reviews</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="media mb-4">
+                    <img class="mr-3 rounded-circle" src="storeimages/user-2.png" alt="User Image" width="64px">
+                    <div class="media-body">
+                        <h5 class="mt-0">Jaison</h5>
+                        <p>Great product! The quality is excellent and the fit is perfect.</p>
+                    </div>
+                </div>
+                <div class="media mb-4">
+                    <img class="mr-3 rounded-circle" src="storeimages/user-2.png" alt="User Image" width="64px">
+                    <div class="media-body">
+                        <h5 class="mt-0">Brijesh </h5>
+                        <p>I love this t-shirt! The color is vibrant and it feels very comfortable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-5 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary mt-3" type="button"
+                                style="position: relative; top: -15px; left: 8%;">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex social-links">
+                    <li><a class="link-dark" href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><svg
+                                class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li><a class="link-dark" href="https://www.instagram.com/"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li><a class="link-dark" href="https://www.facebook.com/login/"><svg class="bi" width="24"
+                                height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
