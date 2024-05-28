@@ -1,0 +1,129 @@
+body {
+  background-color: #ccb091 !important;
+}
+
+.navbar {
+  background-color: #ccb091 !important;
+}
+.nav-link {
+  color: black;
+  font-size: 1.2rem;
+}
+
+#btn1 {
+  border-radius: 25px;
+}
+.content {
+  margin-top: 150px;
+}
+.content h1 {
+  font-size: 40px;
+}
+#btn2 button {
+  width: 120px;
+  height: 32px;
+  font-size: 14px;
+  color: black;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn2 button:hover {
+  background-color: #793d27;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+}
+
+#group-name {
+  font-family: "Monaco";
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.btn-outline-dark {
+  width: 100%;
+}
+
+.btn-outline-dark:hover {
+  background-color: black;
+}
+
+.card {
+  background-color: #ccb091;
+  margin: 50px;
+  border-radius: 25px !important;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  text-align: center;
+}
+
+.social-icon {
+  color: black;
+  margin: 20px 10px;
+  font-size: 24px;
+}
+
+#cities {
+  font-size: 1.5rem;
+}
+.copyright {
+  font-size: small;
+  color: black;
+}
+
+#book-container {
+  margin-top: 50px;
+}
+#book-cover {
+  max-width: 100%;
+  border-radius: 10px;
+}
+#book-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#book-author {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#book-description {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+#book-price {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+#quantity {
+  width: 100px;
+  margin-bottom: 20px;
+  background-color: #ccb091;
+}
+#btn-buy {
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+#btn-buy:hover {
+  background-color: #793d27;
+}
+
+.card {
+  min-width: 100% !important;
+}
