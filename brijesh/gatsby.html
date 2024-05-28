@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookHouse</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"
+      data-auto-replace-svg
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-transparent">
+      <a class="navbar-brand" id="brand-name" href="index.html">
+        <img
+          src="images/logo.png"
+          width="50"
+          height="40"
+          class="d-inline-block align-top"
+          alt="logo"
+        />
+        BookHouse
+      </a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#group-name">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" id="book-container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <img src="images/gatsby.png" alt="The Great Gatsby" id="book-cover" />
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <h1 id="book-title">The Great Gatsby</h1>
+          <h2 id="book-author">by F. Scott Fitzgerald</h2>
+          <p id="book-description">
+            The Great Gatsby, written by F. Scott Fitzgerald, is a classic
+            American novel set in the Roaring Twenties. It tells the story of
+            Jay Gatsby, a mysterious millionaire known for his extravagant
+            parties and unrequited love for Daisy Buchanan. Narrated by Nick
+            Carraway, a Yale graduate and Gatsby's neighbor, the novel explores
+            themes of decadence, idealism, and social upheaval. Gatsby's
+            obsession with recreating the past and his pursuit of the American
+            Dream ultimately lead to his tragic downfall. The novel vividly
+            captures the spirit of the Jazz Age, highlighting the moral decay
+            beneath the glittering surface of wealth and privilege. Characters
+            such as Tom Buchanan, Daisy's brutish husband, and Jordan Baker, a
+            cynical golfer, add depth to this exploration of love, ambition, and
+            betrayal. Fitzgerald's lyrical prose and keen social commentary make
+            The Great Gatsby a timeless reflection on the American experience,
+            illustrating the illusory nature of dreams and the destructive power
+            of obsession. The novel remains a poignant critique of the American
+            Dream, revealing the hollow pursuit of wealth and status in a
+            rapidly changing society.
+          </p>
+          <p id="book-price">$27</p>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              class="form-control"
+              value="1"
+              min="1"
+            />
+          </div>
+          <a href="#" class="btn-outline-dark" id="btn-buy">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <a href="https://www.twitter.com"
+          ><i class="social-icon fab fa-twitter-square 8x"></i
+        ></a>
+        <a href="https://www.facebook.com"
+          ><i class="social-icon fab fa-facebook-square 8x"></i
+        ></a>
+        <a href="https://www.instagram.com"
+          ><i class="social-icon fab fa-instagram 8x"></i
+        ></a>
+        <a href="mailto:n11913908@qut.edu.au"
+          ><i class="social-icon fas fa-envelope 8x"></i
+        ></a>
+        <p id="cities">Brisbane | Sydney | Melbourne | Bengaluru</p>
+        <p class="copyright">© Copyright 2024 BookHouse</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
