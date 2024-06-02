@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<!-- display tours for the specific city -->
+<section>
+
+    <div class="text-dark text-center">
+        <div>
+            <p class="h3 text-black mb-4 message-line">Browse through our wonderful collection of books!!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% for book in books %}
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ url_for('static', filename='img/'+book.image) }}" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ book.name }}</h4>
+                        <p class="card-text">{{ "$%.2f"|format(book.price) }}</p>
+                        <p class="card-text">{{ book.description }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <form action="{{ url_for('main.order') }}">
+                            <input type="hidden" id="book_id" name="book_id" value="{{ book.id }}">
+                            <input class="btn btn-primary btn2 button" type="submit" value="Add to Basket">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+
+</section>
+{% endblock %}
+

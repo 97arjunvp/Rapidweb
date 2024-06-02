@@ -1,0 +1,94 @@
+body {
+  background-color: #ccb091 !important;
+}
+
+.navbar {
+  background-color: #ccb091 !important;
+}
+.nav-link {
+  color: black;
+  font-size: 1.2rem;
+}
+
+#btn1 {
+  border-radius: 25px;
+}
+.content {
+  margin-top: 150px;
+}
+.content h1 {
+  font-size: 40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+}
+
+#group-name {
+  font-family: "Monaco";
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.btn2.button {
+  background-color: #8B4513; 
+  border-radius: 15px; 
+  border: none; /* Remove the default border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block for better spacing */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn2.button:hover {
+  background-color: #A0522D; /* Darker brown on hover */
+}
+
+
+
+
+.card {
+  background-color: #ccb091 !important;
+  border-radius: 25px !important;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  text-align: center;
+}
+
+.social-icon {
+  color: black;
+  margin: 20px 10px;
+  font-size: 24px;
+}
+
+#cities {
+  font-size: 1.5rem;
+}
+.copyright {
+  font-size: small;
+  color: black;
+}
+
+.my-row {
+  border: 1px solid grey;
+}
+
+.message-line{
+  font-family: "Monaco";
+}

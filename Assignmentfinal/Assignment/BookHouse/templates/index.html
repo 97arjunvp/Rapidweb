@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block head %}
+    <!-- Carousal -->
+    <div class="content text-center">
+        <h1>
+          Discover Your Next Great Read, <br />
+          Where Every Book Opens a New World.
+        </h1>
+      </div>
+  
+      <div
+        id="testimonialCarousel"
+        class="carousel slide mt-5"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#testimonialCarousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 200px"
+            >
+              <div class="text-center">
+                <p class="lead">
+                  "An absolute gem in the world of bookstores. The variety and
+                  quality of books are unmatched!"
+                </p>
+                <h5>- The Literary Review</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 200px"
+            >
+              <div class="text-center">
+                <p class="lead">
+                  "Exceptional customer service paired with a fantastic
+                  collection. A must-visit for every book lover."
+                </p>
+                <h5>- Reader's Digest</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 200px"
+            >
+              <div class="text-center">
+                <p class="lead">
+                  "This is my most preferred place to buy books once Amazon is
+                  down"
+                </p>
+                <h5>- Avid Reader Jaison Vengal Cherian</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 200px"
+            >
+              <div class="text-center">
+                <p class="lead">
+                  "A book store that truly understands its customers. Always a
+                  delightful experience."
+                </p>
+                <h5>- Bookish Magazine</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 200px"
+            >
+              <div class="text-center">
+                <p class="lead">
+                  "There is something for everyone! Really Happy!"
+                </p>
+                <h5>- A Satisfied Customer Arjun VP</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#testimonialCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#testimonialCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+{% endblock %}
+
+{% block main %}
+
+<section id="categories">
+    <div class="container">
+      <div class="row">
+          {% for category in categories %}
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                  <img class="card-img-top" src="{{ url_for('static', filename='img/'+category.image) }}" alt="Card image">
+                  <div class="card-body">
+                      <h4 class="card-title">{{ category.name }}</h4>
+                      <p class="card-text">{{ category.description }}</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="{{ url_for('main.bookcategory', categoryid=category.id) }}" class="btn btn-primary card-button btn2 button">Click to View</a>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+  
+</section>
+{% endblock %}
